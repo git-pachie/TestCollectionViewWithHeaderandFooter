@@ -19,9 +19,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        if segue.identifier == "showDetails" {
+            
+            if let selectedIndexPath = collectionview.indexPathsForSelectedItems?.first
+            {
+                if let vc = segue.destination as? DetailViewController
+                {
+                    
+                    print("section \(selectedIndexPath.section)")
+                    print("item \(selectedIndexPath.item)")
+                    
+                    vc.selectedSection = selectedIndexPath.section
+                    vc.selectedItem = selectedIndexPath.item
+                }
+            }
+            
+            
+            
+            //print("prepare for segue \(selectedIndexPath)")
+        }
     }
 
 
@@ -76,10 +97,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
         let adjSize = (width / 3) - sm
         
         
-        print("collection view wid \(width)")
-        print("adjSize: \(adjSize)")
-        print("sm \(sm)")
-        
+       
         return CGSize(width: adjSize, height: height)
     }
     
@@ -117,6 +135,9 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegateFl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Section \(indexPath.section) and Item \(indexPath.item)")
+        
+        performSegue(withIdentifier: "showDetails", sender: self)
+        
     }
     
     
