@@ -21,13 +21,31 @@ class SmallCards1DataSource: NSObject, UICollectionViewDataSource, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallcell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallcell", for: indexPath) as! CellCollectionReusableViewSmall
         
         cell.backgroundColor = mySmallCardList[indexPath.item]
         
+
         cell.layer.cornerRadius = 10
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = CGSize(width: 1, height: 1)
+        
+        if indexPath.item == 0
+        {
+            cell.setupImage22(imageNameKo: "Card3", width: cell.layer.frame.width, height: cell.frame.height)
+        }
+        else if indexPath.item == 1
+        {
+            cell.setupImage22(imageNameKo: "Card2", width: cell.layer.frame.width, height: cell.frame.height)
+        }
+        else
+        {
+            cell.setupImage22(imageNameKo: "Card1", width: cell.layer.frame.width, height: cell.frame.height)
+        }
+        
+        
+        
+       
         
         return cell
     }
@@ -36,7 +54,7 @@ class SmallCards1DataSource: NSObject, UICollectionViewDataSource, UICollectionV
         
         
         //let height = CGFloat(100)
-        let width = (collectionView.bounds.width / 2) - 40
+        let width = (collectionView.bounds.width / 2) - 45
 
         //let colLayout = collectionViewLayout as! UICollectionViewFlowLayout
 
@@ -44,9 +62,9 @@ class SmallCards1DataSource: NSObject, UICollectionViewDataSource, UICollectionV
 
         let heightSize = width  / 1.5
 
-        print("collection view width \(width)")
-               print("heightSize: \(heightSize)")
-               //print("sm \(subMin)")
+//        print("collection view width \(width)")
+//               print("heightSize: \(heightSize)")
+//               //print("sm \(subMin)")
 
 
         return CGSize(width: width, height: heightSize)

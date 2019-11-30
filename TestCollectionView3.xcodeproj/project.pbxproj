@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CD6AA822393043B00491874 /* CellCollectionReusableView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6AA812393043B00491874 /* CellCollectionReusableView2.swift */; };
+		0CD6AA842393151A00491874 /* CellCollectionReusableView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD6AA832393151A00491874 /* CellCollectionReusableView1.swift */; };
 		0CF05FE72391066800D2E855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF05FE62391066800D2E855 /* AppDelegate.swift */; };
 		0CF05FE92391066800D2E855 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF05FE82391066800D2E855 /* SceneDelegate.swift */; };
 		0CF05FEB2391066800D2E855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF05FEA2391066800D2E855 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CD6AA812393043B00491874 /* CellCollectionReusableView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionReusableView2.swift; sourceTree = "<group>"; };
+		0CD6AA832393151A00491874 /* CellCollectionReusableView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionReusableView1.swift; sourceTree = "<group>"; };
 		0CF05FE32391066800D2E855 /* TestCollectionView3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCollectionView3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF05FE62391066800D2E855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CF05FE82391066800D2E855 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				0CFE3F9E2391E4480094FBB4 /* HeaderCollectionReusableView.swift */,
 				0CFE3FA0239235FF0094FBB4 /* DetailViewController.swift */,
 				0CFE3FA22392ADED0094FBB4 /* SmallCards1DataSource.swift */,
+				0CD6AA832393151A00491874 /* CellCollectionReusableView1.swift */,
+				0CD6AA812393043B00491874 /* CellCollectionReusableView2.swift */,
 			);
 			path = TestCollectionView3;
 			sourceTree = "<group>";
@@ -151,6 +157,8 @@
 				0CF05FEB2391066800D2E855 /* ViewController.swift in Sources */,
 				0CFE3FA1239235FF0094FBB4 /* DetailViewController.swift in Sources */,
 				0CF05FE72391066800D2E855 /* AppDelegate.swift in Sources */,
+				0CD6AA822393043B00491874 /* CellCollectionReusableView2.swift in Sources */,
+				0CD6AA842393151A00491874 /* CellCollectionReusableView1.swift in Sources */,
 				0CFE3FA32392ADED0094FBB4 /* SmallCards1DataSource.swift in Sources */,
 				0CF05FE92391066800D2E855 /* SceneDelegate.swift in Sources */,
 			);
