@@ -15,6 +15,7 @@
 		0CF05FF32391066900D2E855 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF05FF12391066900D2E855 /* LaunchScreen.storyboard */; };
 		0CFE3F9F2391E4480094FBB4 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE3F9E2391E4480094FBB4 /* HeaderCollectionReusableView.swift */; };
 		0CFE3FA1239235FF0094FBB4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE3FA0239235FF0094FBB4 /* DetailViewController.swift */; };
+		0CFE3FA32392ADED0094FBB4 /* SmallCards1DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFE3FA22392ADED0094FBB4 /* SmallCards1DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0CF05FF42391066900D2E855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CFE3F9E2391E4480094FBB4 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0CFE3FA0239235FF0094FBB4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0CFE3FA22392ADED0094FBB4 /* SmallCards1DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallCards1DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				0CF05FF42391066900D2E855 /* Info.plist */,
 				0CFE3F9E2391E4480094FBB4 /* HeaderCollectionReusableView.swift */,
 				0CFE3FA0239235FF0094FBB4 /* DetailViewController.swift */,
+				0CFE3FA22392ADED0094FBB4 /* SmallCards1DataSource.swift */,
 			);
 			path = TestCollectionView3;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				0CF05FEB2391066800D2E855 /* ViewController.swift in Sources */,
 				0CFE3FA1239235FF0094FBB4 /* DetailViewController.swift in Sources */,
 				0CF05FE72391066800D2E855 /* AppDelegate.swift in Sources */,
+				0CFE3FA32392ADED0094FBB4 /* SmallCards1DataSource.swift in Sources */,
 				0CF05FE92391066800D2E855 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

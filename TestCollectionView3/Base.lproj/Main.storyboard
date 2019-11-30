@@ -95,26 +95,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-Xy-2fd">
-                                <rect key="frame" x="10" y="10" width="394" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="LHi-Qh-lg1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seasonal Gift Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-Xy-2fd">
+                                <rect key="frame" x="10" y="10" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zgG-E4-6re">
-                                <rect key="frame" x="10" y="70" width="389" height="499"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="10" y="41" width="389" height="139"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="499" id="6vg-3H-FBb"/>
+                                    <constraint firstAttribute="height" constant="139" id="6vg-3H-FBb"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="20" minimumInteritemSpacing="10" id="6pS-Rx-OMn">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6pS-Rx-OMn">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="D4N-NV-Ysd">
@@ -126,20 +123,42 @@
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Jkc-JQ-W12" id="Nk6-pl-TPv"/>
-                                    <outlet property="delegate" destination="Jkc-JQ-W12" id="Vj6-oH-ohl"/>
-                                </connections>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sxZ-Ae-zmp">
+                                <rect key="frame" x="10" y="190" width="394" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LGQ-Sz-KU8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UdT-Xr-wvi">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="smallcell" id="NG4-da-P6i">
+                                        <rect key="frame" x="5" y="22.5" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QeJ-92-dbz">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="sa8-Xy-2fd" firstAttribute="top" secondItem="f9C-1C-x1i" secondAttribute="top" constant="10" id="8Yc-tG-X9w"/>
+                            <constraint firstItem="sa8-Xy-2fd" firstAttribute="leading" secondItem="f9C-1C-x1i" secondAttribute="leading" constant="10" id="0Xf-sa-ItI"/>
+                            <constraint firstItem="sxZ-Ae-zmp" firstAttribute="top" secondItem="zgG-E4-6re" secondAttribute="bottom" constant="10" id="486-k6-4Es"/>
+                            <constraint firstItem="sxZ-Ae-zmp" firstAttribute="leading" secondItem="f9C-1C-x1i" secondAttribute="leading" constant="10" id="5Ct-hQ-0i4"/>
                             <constraint firstItem="f9C-1C-x1i" firstAttribute="trailing" secondItem="zgG-E4-6re" secondAttribute="trailing" constant="15" id="EjV-3L-8Py"/>
-                            <constraint firstItem="sa8-Xy-2fd" firstAttribute="leading" secondItem="f9C-1C-x1i" secondAttribute="leading" constant="10" id="V2o-fj-QiD"/>
-                            <constraint firstItem="f9C-1C-x1i" firstAttribute="trailing" secondItem="sa8-Xy-2fd" secondAttribute="trailing" constant="10" id="Vp1-bT-3Bk"/>
+                            <constraint firstItem="sa8-Xy-2fd" firstAttribute="top" secondItem="f9C-1C-x1i" secondAttribute="top" constant="10" id="Fmx-HB-aPf"/>
+                            <constraint firstItem="zgG-E4-6re" firstAttribute="top" secondItem="sa8-Xy-2fd" secondAttribute="bottom" constant="10" id="VjD-Ad-lgH"/>
                             <constraint firstItem="zgG-E4-6re" firstAttribute="leading" secondItem="f9C-1C-x1i" secondAttribute="leading" constant="10" id="ZbF-pc-bb7"/>
-                            <constraint firstItem="zgG-E4-6re" firstAttribute="top" secondItem="sa8-Xy-2fd" secondAttribute="bottom" constant="10" id="rpi-1w-8nf"/>
+                            <constraint firstItem="f9C-1C-x1i" firstAttribute="trailing" secondItem="sa8-Xy-2fd" secondAttribute="trailing" constant="10" id="deM-8Z-p7d"/>
+                            <constraint firstItem="f9C-1C-x1i" firstAttribute="trailing" secondItem="sxZ-Ae-zmp" secondAttribute="trailing" constant="10" id="wPO-QT-7bW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="f9C-1C-x1i"/>
                     </view>
@@ -147,6 +166,8 @@
                         <outlet property="consHeight" destination="6vg-3H-FBb" id="BV1-pT-kvP"/>
                         <outlet property="detailLabel" destination="sa8-Xy-2fd" id="4gV-lU-bgF"/>
                         <outlet property="myDetailCollectionView" destination="zgG-E4-6re" id="Kbi-LV-KHB"/>
+                        <outlet property="thankyouCardCollectionView" destination="sxZ-Ae-zmp" id="Joy-L7-Sxs"/>
+                        <outlet property="thankyouHeightConstraint" destination="LGQ-Sz-KU8" id="G1q-Lw-9gV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dz4-6Y-dDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
