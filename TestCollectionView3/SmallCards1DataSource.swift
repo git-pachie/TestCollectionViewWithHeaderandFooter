@@ -32,15 +32,15 @@ class SmallCards1DataSource: NSObject, UICollectionViewDataSource, UICollectionV
         
         if indexPath.item == 0
         {
-            cell.setupImage22(imageNameKo: "Card3", width: cell.layer.frame.width, height: cell.frame.height)
+            cell.setupImage22(imageNameKo: "Card3")
         }
         else if indexPath.item == 1
         {
-            cell.setupImage22(imageNameKo: "Card2", width: cell.layer.frame.width, height: cell.frame.height)
+            cell.setupImage22(imageNameKo: "Card2")
         }
         else
         {
-            cell.setupImage22(imageNameKo: "Card1", width: cell.layer.frame.width, height: cell.frame.height)
+            cell.setupImage22(imageNameKo: "Card1")
         }
         
         
