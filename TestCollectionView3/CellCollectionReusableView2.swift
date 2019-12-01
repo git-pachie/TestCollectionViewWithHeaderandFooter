@@ -11,6 +11,7 @@ import UIKit
 class CellCollectionReusableViewSmall: UICollectionViewCell {
         
     
+    @IBOutlet weak var detailedLabel: UILabel!
     
    
 
@@ -26,6 +27,12 @@ class CellCollectionReusableViewSmall: UICollectionViewCell {
         
         image1.layer.cornerRadius = 5
         image1.clipsToBounds = true
+        
+        detailedLabel.text = "Three"
+        detailedLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
+        detailedLabel.layer.shadowOpacity = 0.50
+        
+        
     }
     
 }

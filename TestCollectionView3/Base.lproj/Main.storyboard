@@ -169,7 +169,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="LGQ-Sz-KU8"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="UdT-Xr-wvi">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UdT-Xr-wvi">
                                     <size key="itemSize" width="192" height="95"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -186,16 +186,27 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d06-tB-38z">
                                                     <rect key="frame" x="0.0" y="0.0" width="192" height="95"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWj-4U-8jV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="192" height="95"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="30"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="aWj-4U-8jV" firstAttribute="leading" secondItem="QeJ-92-dbz" secondAttribute="leading" id="7F5-lt-9sP"/>
                                                 <constraint firstAttribute="trailing" secondItem="d06-tB-38z" secondAttribute="trailing" id="VTL-dw-BBK"/>
                                                 <constraint firstAttribute="bottom" secondItem="d06-tB-38z" secondAttribute="bottom" id="ZLs-2P-XTz"/>
+                                                <constraint firstAttribute="trailing" secondItem="aWj-4U-8jV" secondAttribute="trailing" id="Zny-9K-UfX"/>
+                                                <constraint firstAttribute="bottom" secondItem="aWj-4U-8jV" secondAttribute="bottom" id="fD5-Ow-Ntc"/>
                                                 <constraint firstItem="d06-tB-38z" firstAttribute="leading" secondItem="QeJ-92-dbz" secondAttribute="leading" id="pEG-EB-CGh"/>
                                                 <constraint firstItem="d06-tB-38z" firstAttribute="top" secondItem="QeJ-92-dbz" secondAttribute="top" id="pOR-XC-B3O"/>
+                                                <constraint firstItem="aWj-4U-8jV" firstAttribute="top" secondItem="QeJ-92-dbz" secondAttribute="top" id="x9J-wa-KWm"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="192" height="95"/>
                                         <connections>
+                                            <outlet property="detailedLabel" destination="aWj-4U-8jV" id="lxd-8H-s6R"/>
                                             <outlet property="image1" destination="d06-tB-38z" id="rdQ-KI-Yzd"/>
                                         </connections>
                                     </collectionViewCell>
